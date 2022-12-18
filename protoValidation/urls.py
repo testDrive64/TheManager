@@ -23,6 +23,8 @@ urlpatterns = [
     path('', include('placeholder.urls')),
     path('survey/', include('survey.urls')),
     path('users/', include('users.urls')),
+    path('vehicles/', include('vehicles.urls')),
+    path('components/', include('components.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
